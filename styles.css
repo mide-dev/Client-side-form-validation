@@ -52,7 +52,68 @@ table {
 /* END OF CSS RESET */
 /* ****************************************************** */
 
+/* BASE STYLES */
+
 @font-face {
   font-family: "Norse Bold";
   src: url("assets/Norse-Bold.otf");
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+/* LAYOUT STYLES*/
+
+.container {
+  display: grid;
+  grid-template-columns: min(30rem, 40%) 1fr;
+}
+
+/* aside */
+
+aside {
+  height: 100vh;
+  position: relative;
+  background-image: url("assets/plant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.logo-wrapper,
+.bg-image-credit {
+  position: absolute;
+}
+
+.logo-wrapper {
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-block: 0.75rem;
+  font-family: "Norse Bold", sans-serif;
+  font-size: 5rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+.bg-image-credit {
+  font-size: 0.75rem;
+  bottom: 10px;
+  left: 25%;
+}
+
+/* Main */
+
+main {
+  border: 3px solid magenta;
 }
