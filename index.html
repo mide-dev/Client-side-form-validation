@@ -8,8 +8,113 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <h1>Hello World</h1>
+    <div class="container">
+      <aside>
+        <div class="bg-img-wrapper">
+          <img
+            class="bg-img"
+            src="assets/halie-west-25xggax4bSA-unsplash.jpg"
+            alt="image of plant"
+          />
+          <div class="logo-wrapper">
+            <img src="assets/odin-lined.png" class="logo" alt="logo" />
+          </div>
+          <small class="bg-image-credit"
+            >Photo by <a href="#">Halie West</a> on
+            <a href="#">Unsplash</a></small
+          >
+        </div>
+      </aside>
+      <main>
+        <div class="form-heading-wrapper">
+          <h1 class="form-heading">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your biggest dreams.
+            <span>Sign up <span>now</span> to get started.</span>
+          </h1>
+          <p>You <span>know</span> you want to</p>
+        </div>
+        <div class="contact-form-wrapper">
+          <h2 class="contact-form-title">Let's do this!</h2>
+          <form class="contact-form">
+            <div class="contact-form-grid">
+              <div>
+                <div>
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">EMAIL</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <label for="last-name">LAST NAME</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="tel">PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    autocomplete="password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="contact-form-btn" type="submit">
+              Create Account
+            </button>
+            <p>Already have an account? <a>Log in</a></p>
+          </form>
+        </div>
+      </main>
     </div>
     <script src="main.js"></script>
   </body>
