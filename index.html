@@ -29,85 +29,89 @@
             <p>Sign up <span>now</span> to get started.</p>
             <p>You <span>know</span> you want to.</p>
           </div>
-          <div class="contact-form-wrapper">
-            <h2 class="contact-form-title">Let's do this!</h2>
-            <form class="contact-form">
-              <div>
-                <div class="contact-form-grid">
-                  <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input
-                      type="text"
-                      id="first-name"
-                      name="firstName"
-                      autocomplete="given-name"
-                      required
-                    />
-                  </div>
 
-                  <div>
-                    <label for="last-name">LAST NAME</label>
-                    <input
-                      type="text"
-                      id="last-name"
-                      name="lastName"
-                      autocomplete="family-name"
-                      required
-                    />
-                  </div>
+          <form class="contact-form">
+            <div class="contact-form-wrapper">
+              <p class="contact-form-cta">Let's do this!</p>
+              <div class="contact-form-grid">
+                <div>
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                  />
+                  <span id="err-msg-first-name">please input First Name</span>
+                </div>
 
-                  <div>
-                    <label for="email">EMAIL</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      autocomplete="email"
-                      required
-                    />
-                  </div>
+                <div>
+                  <label for="last-name">LAST NAME</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                  />
+                  <span id="err-msg-last-name">please input Last Name</span>
+                </div>
 
-                  <div>
-                    <label for="tel">PHONE NUMBER</label>
-                    <input
-                      type="tel"
-                      id="tel"
-                      name="tel"
-                      autocomplete="tel"
-                      required
-                    />
-                  </div>
+                <div>
+                  <label for="email">EMAIL</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                  <span id="err-msg-email">please input Email</span>
+                </div>
 
-                  <div>
-                    <label for="password">PASSWORD</label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      autocomplete="password"
-                      required
-                    />
-                  </div>
+                <div>
+                  <label for="tel">PHONE NUMBER</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    autocomplete="tel"
+                    required
+                  />
+                  <span id="err-msg-tel">please input Phone Number</span>
+                </div>
 
-                  <div>
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input
-                      type="password"
-                      id="confirm-password"
-                      name="confirmPassword"
-                      autocomplete="password"
-                      required
-                    />
-                  </div>
+                <div>
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="password"
+                    required
+                  />
+                  <span id="err-msg-password">please input Password</span>
+                </div>
+
+                <div>
+                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    autocomplete="password"
+                    required
+                  />
                 </div>
               </div>
+            </div>
 
-              <button class="contact-form-btn" type="submit">
-                Create Account
-              </button>
-              <p>Already have an account? <a>Log in</a></p>
-            </form>
-          </div>
+            <button class="contact-form-btn" type="submit">
+              Create Account
+            </button>
+            <p>Already have an account? <a>Log in</a></p>
+          </form>
         </div>
       </main>
     </div>
