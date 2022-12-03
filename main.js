@@ -36,31 +36,32 @@ const validateForm = (e) => {
     // check for no input or when user inputs space only
     //   prettier-ignore
     if (input.value.length === 0 || input.value.match(/^(\s)+$/)) {
-        errMessage.innerHTML = "Name is required";
-        submitErrorMsg(errMessage);
-        return;
-      } else {
-        // delete error msg if input is valid
-        errMessage.innerHTML = "";
-        submitErrorMsg(errMessage);
-      }
-
-    // Prevent special characters and numbers in name
-    //   prettier-ignore
-    if (input.value.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~\d]/)) {
-        errMessage.innerHTML = "numbers and special charaters are not allowed";
-        submitErrorMsg(errMessage);
-        return;
-        } else {
-        // delete error msg if input is valid
-        errMessage.innerHTML = submitError.innerHTML = "";
-        submitErrorMsg(errMessage);
+      errMessage.innerHTML = "Name is required";
+      submitErrorMsg(errMessage);
+      return;
+      // Prevent special characters in name
+      //   prettier-ignore
+    } else if (input.value.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/)) {
+      errMessage.innerHTML = "special charaters are not allowed in name";
+      submitErrorMsg(errMessage);
+      return;
+      // Prevent numbers in name
+    } else if (input.value.match(/\d/)) {
+      errMessage.innerHTML = "numbers are not allowed in name";
+      submitErrorMsg(errMessage);
+      return;
+    } else {
+      // delete error msg if input is valid
+      errMessage.innerHTML = "";
+      submitErrorMsg(errMessage);
     }
   };
 
-  //   call the function with first and last name
+  // call the function to validate first and last name inputs
   NameValidate(firstNameInput, firstNameError);
   NameValidate(lastNameInput, lastNameError);
+
+  // LOGIC TO VALIDATE EMAIL
 };
 
 // bind event listner
