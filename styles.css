@@ -174,8 +174,9 @@ main {
   row-gap: 1.2rem;
 }
 
-.contact-form-grid label {
+.contact-form label {
   display: block;
+  color: rgb(41, 41, 41);
   font-weight: bold;
   font-size: 0.65rem;
   padding-bottom: 0.2rem;
@@ -193,10 +194,10 @@ main {
   outline: none !important;
   border: 1px solid blue;
   border-radius: 3px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.63);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-.contact-form-grid span {
+.contact-form span {
   display: block;
   padding-top: 0.2rem;
   font-size: 0.875rem;
@@ -210,7 +211,6 @@ main {
   border: none;
   border-radius: 4px;
   padding: 0.75rem 1.8rem;
-  margin-bottom: 2rem;
   cursor: pointer;
 }
 
@@ -218,6 +218,7 @@ main {
   color: black;
   font-size: 0.85rem;
   font-weight: 500;
+  margin-top: 2rem;
 }
 
 .contact-form-footer a {
