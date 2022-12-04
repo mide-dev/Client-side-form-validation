@@ -171,7 +171,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 250px));
   column-gap: clamp(2rem, 50%, 5rem);
-  row-gap: 1.2rem;
+  row-gap: 2rem;
 }
 
 .contact-form label {
@@ -190,6 +190,10 @@ main {
   border-radius: 3px;
 }
 
+[data-input="not-valid"] {
+  border-color: rgb(214, 6, 6) !important;
+}
+
 .contact-form input:focus {
   outline: none !important;
   border: 1px solid blue;
@@ -199,8 +203,9 @@ main {
 
 .contact-form span {
   display: block;
+  position: absolute;
   padding-top: 0.2rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: rgb(214, 6, 6);
 }
 
